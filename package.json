@@ -18,12 +18,19 @@
     "styled-components": "^5.3.3",
     "uuid": "^8.3.2"
   },
-  "scripts": {
+  /*"scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
-  },
+  },*/
+  "scripts": {
+    "ios": "react-native run-ios",
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "test:e2e":"npm run test",
+    "test:e2e:build":"npm run build"  // THIS SCRIPT WILL STILL BREAK FOR YOU
+}
   "eslintConfig": {
     "extends": [
       "react-app"
